@@ -68,7 +68,7 @@ Powerup.prototype = Object.create(Phaser.Sprite.prototype);
 Powerup.prototype.constructor = Powerup;
 
 Powerup.prototype.move = function() {
-    const speed = 500;
+    const speed = 300;
     this.body.velocity.y = -speed;
 };
 
@@ -200,7 +200,8 @@ maingame.prototype = {
 		}
         block.kill();
         blockCount += 1;
-        scoreText = "Punteggio: " + blockCount.toString();
+		score += 10;
+        scoreText = "Punteggio: " + score.toString();
         scoreFont.text = scoreText;
     },
 	_spawnPowerUp: function(block){
