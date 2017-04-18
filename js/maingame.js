@@ -200,7 +200,7 @@ maingame.prototype = {
 		}
         block.kill();
         blockCount += 1;
-		score += 15;
+		score += 20;
         scoreText = "Punteggio: " + score.toString();
         scoreFont.text = scoreText;
     },
